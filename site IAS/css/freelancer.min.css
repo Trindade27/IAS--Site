@@ -31,7 +31,16 @@ h6 {
   text-transform: uppercase;
   font-weight: 700;
 }
+
+p-contact-us{
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 22px;
+	text-decoration:underline;
+}
+
 hr.star-light,
+hr.star-light2,
 hr.star-primary {
   padding: 0;
   border: none;
@@ -40,7 +49,9 @@ hr.star-primary {
   max-width: 250px;
   margin: 25px auto 30px;
 }
+
 hr.star-light:after,
+hr.star-light2:after,
 hr.star-primary:after {
   content: "\f005";
   font-family: FontAwesome;
@@ -57,11 +68,19 @@ hr.star-light:after {
   background-color: #18BC9C;
   color: white;
 }
+hr.star-light2 {
+  border-color: white;
+}
+hr.star-light2:after {
+  background-color: #2C3E50;
+  color: white;
+}
 hr.star-primary {
   border-color: #2C3E50;
 }
 hr.star-primary:after {
   background-color: white;
+  /*background: url("../img/fundo2.jpg") no-repeat center center;*/
   color: #2C3E50;
 }
 .img-centered {
@@ -212,17 +231,17 @@ section.success {
     padding-top: 75px;
   }
 }
-#portfolio .portfolio-item {
-  margin: 0 0 15px;
+#portfolio .teamMates-item {
+  margin: 0 0 5px;
   right: 0;
 }
-#portfolio .portfolio-item .portfolio-link {
+#portfolio .teamMates-item .portfolio-link {
   display: block;
   position: relative;
   max-width: 400px;
   margin: 0 auto;
 }
-#portfolio .portfolio-item .portfolio-link .caption {
+#portfolio .teamMates-item .portfolio-link .caption {
   background: rgba(24, 188, 156, 0.9);
   position: absolute;
   width: 100%;
@@ -232,10 +251,10 @@ section.success {
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
 }
-#portfolio .portfolio-item .portfolio-link .caption:hover {
+#portfolio .teamMates-item .portfolio-link .caption:hover {
   opacity: 1;
 }
-#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+#portfolio .teamMates-item .portfolio-link .caption .caption-content {
   position: absolute;
   width: 100%;
   height: 20px;
@@ -245,11 +264,11 @@ section.success {
   margin-top: -12px;
   color: white;
 }
-#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+#portfolio .teamMates-item.portfolio-link .caption .caption-content i {
   margin-top: -12px;
 }
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+#portfolio .teamMates-item .portfolio-link .caption .caption-content h3,
+#portfolio .teamMates-item .portfolio-link .caption .caption-content h4 {
   margin: 0;
 }
 #portfolio * {
@@ -553,4 +572,41 @@ fieldset[disabled] .btn-success.active {
     height: 20px;
     margin: 10px;
     background: #2C3E50;
+}
+
+/**
+ * Profile image component
+ */
+.profile-header-container{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile-header-img {
+    padding: 54px;
+}
+
+.profile-header-img > img.img-circle {
+    width: 250px;
+    height: 250px;
+    border: 2px solid #51D2B7;
+}
+
+.profile-header {
+    margin-top: 43px;
+}
+
+/**
+ * Ranking component
+ */
+.rank-label-container {
+    margin-top: -19px;
+    /* z-index: 1000; */
+    text-align: center;
+}
+
+.label.label-default.rank-label {
+    background-color: #18BC9C;
+    padding: 5px 10px 5px 10px;
+    border-radius: 27px;
 }
