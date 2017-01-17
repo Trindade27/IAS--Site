@@ -54,15 +54,15 @@ hr.star-light {
   border-color: white;
 }
 hr.star-light:after {
-  background-color: #18BC9C;
+  background-color: white;
   color: white;
 }
 hr.star-primary {
-  border-color: #2C3E50;
+  border-color: #0072a7;
 }
 hr.star-primary:after {
   background-color: white;
-  color: #2C3E50;
+  color: #0072a7;
 }
 .img-centered {
   margin: 0 auto;
@@ -104,7 +104,7 @@ header .intro-text .skills {
   }
 }
 .navbar-custom {
-  background: #2C3E50;
+  background: #0072a7;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -129,7 +129,7 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #18BC9C;
+  color: #0072a7;
   outline: none;
 }
 .navbar-custom .navbar-nav li a:focus,
@@ -138,13 +138,13 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-nav li.active a {
   color: white;
-  background: #18BC9C;
+  background: #0072a7;
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
   color: white;
-  background: #18BC9C;
+  background: #0072a7;
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -154,9 +154,9 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #18BC9C;
+  background-color: #0072a7;
   color: white;
-  border-color: #18BC9C;
+  border-color: #0072a7;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -186,7 +186,7 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  background: #18BC9C;
+  background: #0072a7;
   color: white;
 }
 @media (max-width: 767px) {
@@ -296,6 +296,9 @@ form .row:first-child .floating-label-form-group {
 }
 footer {
   color: white;
+}
+centered {
+  left: 50%;
 }
 footer h3 {
   margin-bottom: 30px;
